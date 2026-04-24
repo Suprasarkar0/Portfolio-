@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supra Sarkar | Cinematographer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;600&display=swap');
+        
+        body { background-color: #050505; color: #fafafa; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        .heading-font { font-family: 'Syncopate', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .accent-gradient { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .service-card:hover { transform: translateY(-10px); border-color: #3b82f6; transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+    </style>
+</head>
+<body>
+
+    <nav class="fixed w-full z-50 py-6 px-10 flex justify-between items-center">
+        <h1 class="heading-font text-xl font-bold tracking-widest uppercase">SUPRA<span class="text-blue-500">.</span></h1>
+        <div class="hidden md:flex space-x-10 text-xs tracking-[0.2em] uppercase font-semibold">
+            <a href="#services" class="hover:text-blue-500 transition">Services</a>
+            <a href="#portfolio" class="hover:text-blue-500 transition">Portfolio</a>
+            <a href="#contact" class="hover:text-blue-500 transition">Contact</a>
+        </div>
+    </nav>
+
+    <section class="h-screen flex flex-col justify-center items-center relative text-center px-4">
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center"></div>
+        
+        <div class="absolute inset-0 bg-gradient-to-b from-black/70 via-black/40 to-[#050505]"></div>
+        
+        <div class="relative z-10">
+            <h2 data-aos="zoom-out" data-aos-duration="2000" class="heading-font text-5xl md:text-8xl font-bold mb-4 uppercase leading-none tracking-tighter">
+                Supra Sarkar
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="500" class="h-1 w-24 bg-blue-600 mb-6 mx-auto"></div>
+            <p data-aos="fade-up" data-aos-delay="700" class="text-gray-200 tracking-[0.5em] uppercase text-xs md:text-sm font-light">
+                Cinematographer | Visual Storyteller
+            </p>
+        </div>
+
+        <div class="absolute bottom-10 animate-bounce z-10">
+            <p class="text-[10px] tracking-widest uppercase mb-2 text-gray-400">Scroll to Explore</p>
+            <i class="fas fa-chevron-down text-blue-500 text-xl mx-auto"></i>
+        </div>
+    </section>
+
+
+    <section id="services" class="py-32 px-6 container mx-auto">
+        <h3 class="heading-font text-2xl mb-20 text-center uppercase tracking-widest" data-aos="fade-up">My Expertise</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="service-card glass p-10 rounded-2xl" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-heart text-3xl text-blue-500 mb-6"></i>
+                <h4 class="heading-font text-lg mb-4 uppercase">Wedding Films</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Capturing the raw emotions and timeless rituals of your special day with a cinematic, candid touch.</p>
+            </div>
+
+            <div class="service-card glass p-10 rounded-2xl" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-film text-3xl text-blue-500 mb-6"></i>
+                <h4 class="heading-font text-lg mb-4 uppercase">Storytelling</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Narrative-driven content, short films, and documentaries that focus on deep character and mood.</p>
+            </div>
+
+            <div class="service-card glass p-10 rounded-2xl" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-leaf text-3xl text-blue-500 mb-6"></i>
+                <h4 class="heading-font text-lg mb-4 uppercase">Nature & Travel</h4>
+                <p class="text-gray-400 text-sm leading-relaxed">Wide-angle landscapes and macro shots that showcase the majestic beauty of the natural world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="py-20 bg-[#080808]">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="relative group overflow-hidden h-[500px]" data-aos="reveal-right">
+                    <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest mb-2">Category: Wedding</span>
+                        <h5 class="heading-font text-2xl">The Eternal Vow</h5>
+                    </div>
+                </div>
+                <div class="relative group overflow-hidden h-[500px]" data-aos="reveal-left">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=2070&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-110 grayscale group-hover:grayscale-0">
+                    <div class="absolute inset-0 bg-black/50 flex flex-col justify-end p-10 opacity-0 group-hover:opacity-100 transition duration-500">
+                        <span class="text-blue-500 text-xs font-bold uppercase tracking-widest mb-2">Category: Nature</span>
+                        <h5 class="heading-font text-2xl">Himalayan Silence</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 bg-black border-t border-white/5">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-20">
+            <div data-aos="fade-right">
+                <h3 class="heading-font text-4xl mb-6 uppercase">Let's create <br> magic together.</h3>
+                <p class="text-gray-500 max-w-md mb-10">Currently accepting bookings for 2026/27 projects across India and abroad.</p>
+                <div class="space-y-4">
+                    <p class="flex items-center gap-4 text-lg hover:text-blue-500 transition cursor-pointer">
+                        <i class="fas fa-phone-alt text-blue-600"></i> 7363010401
+                    </p>
+                    <p class="flex items-center gap-4 text-lg hover:text-blue-500 transition cursor-pointer">
+                        <i class="fas fa-envelope text-blue-600"></i> suprasarkar0@gmail.com
+                    </p>
+                </div>
+            </div>
+            
+            <div class="glass p-10 rounded-3xl" data-aos="fade-left">
+                <form class="space-y-6">
+                    <input type="text" placeholder="Your Name" class="w-full bg-transparent border-b border-white/20 py-4 outline-none focus:border-blue-500 transition">
+                    <select class="w-full bg-transparent border-b border-white/20 py-4 outline-none focus:border-blue-500 transition">
+                        <option class="bg-black">Project Type: Wedding</option>
+                        <option class="bg-black">Project Type: Storytelling</option>
+                        <option class="bg-black">Project Type: Nature/Commercial</option>
+                    </select>
+                    <button class="w-full py-5 bg-blue-600 heading-font text-xs tracking-widest uppercase hover:bg-blue-700 transition">Send Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center text-zinc-600 text-[10px] tracking-[0.3em] uppercase">
+        Designed by Supra Sarkar &copy; 2026
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: true
+        });
+    </script>
+</body>
+</html>
